@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background-color: #eeeeee;
+    font-family: 'Lexend Peta', sans-serif;
+}
+header{
+    padding: 5em;
+    background-color: #161725;
+    height: 20%;
+    color: #2d359c;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+form{
+    padding: 1em;
+    padding-bottom: 0.2em;
+    background-color: #161725;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    margin-bottom: 0.1em;
+}
+.input-todo,.add-todo, select {
+    width: 15em;
+    height: 3em;
+    color: #2d359c;
+    text-indent: 0.5em;
+    background-color: #dadcf8;
+    margin: 0;
+    border: #dadcf8 1px !important;
+    font-size: 1rem;
+    border-radius: 0;
+}
+select{
+    width: 7rem;
+}
+.input-todo:focus{
+    border: 0px !important;
+    background-color: #eeeeee;
+}
+input, input:focus{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.add-todo{
+    width: 4em;
+    cursor: pointer;
+}
+.add-todo:hover{
+    color: #2d359c;
+    border: 1px solid #2d359c;
+}
+.container{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+.todo-list{
+    list-style: none;
+    min-width: 33%;
+    
+}
+.unchecked,
+.checked{
+    background-color: #eeeeee;
+    color: #1b1b1b;
+    border: 2px solid #1b1b1b;
+    margin: auto;
+    font-size: 1.3rem;
+    margin-bottom: 1px;
+    
+}
+.todo-list li div{
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+}
+.todo-list li div h5{
+    display: inline;
+    padding: 0.5em;
+    padding-left: 0;
+    text-align: left;
+    text-indent: 0.5rem;
+    flex: 1;
+}
+.delete,
+.complete{
+    position: relative;
+    padding: 0.9em;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    color: #eeeeee;
+}
+.complete{
+    background: #019601;
+}
+.delete{
+    background: #e71d02;
+}
+.deleted{
+    transform: skewY(50deg);
+    opacity: 0;
+}
+.checked{
+    text-decoration: line-through;
+    color: #a7a7a7 !important;
+    border-color: #a7a7a7 !important;
+}
